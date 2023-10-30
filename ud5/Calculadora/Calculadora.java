@@ -1,9 +1,8 @@
-package CD2023.ud5;
+package ud5.Calculadora;
 
 public class Calculadora {
 
-    
-    private double resultado = 0;
+   private double resultado = 0;
 
     
     public double getResultado() {

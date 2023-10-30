@@ -1,50 +1,83 @@
-# Probar Prolog
-Así entramos de forma interactiva.
+## Probar Prolog
+
+#### Descargar imagen
 
 ```bash
 docker pull wipl
-docker run -it swipl
 ```
-Entrar con un terminal interactivo
+
+#### Iniciar 
+
+```bash
+docker run -it
+```
+
+#### Si da error por no tener permisos (Meter usuiario en docker)
+
+```bash
+sudo usermod -aG docker
+```
+
+#### Entrar con un terminal interactivo
 
 ```bash
 docker run -it swipl bash
 ```
 
-Actualizar repositorios
+#### Salir prolog:
+
+```bash
+ctrl D
+```
+
+#### Instalar nano
 
 ```bash
 apt update
-```
-
-Instalar nano
-
-```bash
+apt upgrade
 apt install nano
 ```
-
-Abrir nano para editar el código fuente de un programa
+#### Crear nano
 
 ```bash
-nano programa.pl
+nano programaprolog.pl
 ```
 
-Abrir intérprete de Prolog
+#### Una vez con el nano instalado y de hacer un nano con extensión .pl habrá que pegar las instrucciones que le queremos dar al programa
+
+```bash
+mujer(marge).
+mujer(lisa).
+mujer(maggie).
+mujer(selma).
+
+progenitor(abraham, homer).
+progenitor(homer, bart).
+progenitor(marge, bart).
+progenitor(homer, lisa).
+progenitor(marge, lisa).
+
+abuelo(X, Y):- progenitor(X, Z), progenitor(Z, Y), hombre(X).
+tia(X,Y):- hermana(X,Z), progenitor(Z,Y).
+```
+#### Una vez guardado el .pl iniciaremos el programa con:
 
 ```bash
 swipl
+consult('programaprolog.pl').
+```
+#### Y ahora ya puedes hacer consultas al programa:
+
+```bash
+mujer(marge).
+hombre(juan).
+progenitor(abraham, homer).
+progenitor(marge, lisa).
 ```
 
-Cargar programa en Prolog
 
 
-```prolog
-consult('programa.pl').
-```
 
-Y probar el programa
 
-```prolog
-mujer(X).
-```
+
 
