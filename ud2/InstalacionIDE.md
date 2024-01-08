@@ -41,9 +41,7 @@ sudo apt install netbeans
 
 Y ya estaria.
 
-## Comprobación de que funciona correctamente
 
-![]()
 
 
 
