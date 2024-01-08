@@ -3,6 +3,7 @@ package ud5.Calculadora;
 public class Calculadora {
 
    private double resultado = 0;
+   
 
     
     public double getResultado() {

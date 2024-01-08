@@ -1,4 +1,4 @@
-package CD2023.ud5;
+package ud5.Calculadora;
 
 public class MenuTest {
     public static void main(String[] args) {
