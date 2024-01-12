@@ -38,8 +38,16 @@ Paso 3: Instalar NetBeans con apt
 ```bash
 sudo apt install netbeans
 ```
+Paso 4: Me daba fallo al intentar hacer un poryecto porque la version del jdk no era compatible con la version de net beans asi que instalé la version 20 de netbeans. Con el comando:
 
-Y ya estaria.
+```bash
+sudo snap install netbeans --classic
+```
+
+Y listo
+
+(Captura de que funciona en la carpeta img)
+
 
 
 
