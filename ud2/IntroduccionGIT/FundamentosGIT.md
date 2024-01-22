@@ -135,13 +135,17 @@ Con ls comprobamos que está vacio el repositoria ya que lo acabamos de crear
 4. Realizar un commit con el mensaje “Primera página html”.
 Para hacer el primer comit hay que:
 ```bash
-
+git init
+git add index.html
+git commit -m "Primera página html"
 ```
 
 
 5. Muestra y explica el estado del repositorio.
-
-
+```bash
+git status
+```
+Me pone que no hay nada para hacer commit, el arbol de trabajo está limpio
 
 6. Cambiar la página web para que muestre en un listado 3 ciudades que te gustaría visitar:
 Por ejemplo:
@@ -162,11 +166,16 @@ Por ejemplo:
 ```
 
 7. Hacer un commit de los cambios, con el mensaje “Añadidas 3 ciudades que visitar”.
-
+```bash
+git add index.html
+git commit -m “Añadidas 3 ciudades que visitar”
+```
 
 
 8. Muestra el historial de commits del repositorio.
-
+```bash
+git log
+```
 
 
 
@@ -184,7 +193,208 @@ Por ejemplo:
 
 10. Hacer un commit de los cambios, con el mensaje “Añadida información sobre las ciudades a visitar”.
 
-
-
+```bash
+git add .
+git commit -m "Añadida informacion sobre ciudades"
+```
 
 11. Volver a mostrar el historial de cambios.
+
+```bash
+git log
+```
+
+
+# Ejercicio 3. Fundamentos de GIT
+
+1. Crear un repositorio nuevo con el nombre libro y mostrar su contenido. Comprueba el estado del respositorio.
+```bash
+mkdir libro
+ls libro
+git status 
+```
+
+El status no va devido que que aun no está inicializado el git
+
+2. Crear un fichero indice.txt con el siguiente contenido:
+Capitulo 1: Introducción
+Capitulo 2: Los tres cerditos
+Capitulo 3: Caperucita roja 
+
+
+
+3. Realizar un commit con el mensaje “Añadido índice del libro”.
+```bash
+git init 
+git add index.html
+git commit -m "Añadido índice del libro"
+```
+
+4. Comprueba y explica el estado del repositorio.
+```bash
+git add index.html
+git status
+```
+Me pone que no hay nada para hacer commit, el arbol de trabajo está limpio
+
+
+
+5. Cambiar el índice.txt para que contenga lo siguiente:
+Capitulo 1: Introducción
+Capitulo 2: Los tres cerditos
+Capitulo 3: Caperucita roja 
+Capitulo 4: La bella y la bestia 
+
+
+
+6. Hacer un commit de los cambios con el mensaje “Añadido 4: La bella y la bestia”. Comprueba el estado del repositorio.
+```bash
+git add index.html
+git commit -m "Añadido 4: La bella y la bestia"
+```
+
+7. Muestra el historial del repositorio.
+
+```bash
+git log
+```
+
+
+8. Crea la carpeta capítulos y dentro de ella el fichero capitulo2.txt con el siguiente texto:
+Y el lobo sopló y sopló y la casa derribó. 
+
+```bash
+mkdir capitulos
+cd capitulos
+nano capitulo2.txt
+```
+
+
+
+9. Hacer un commit con el mensaje “Añadido capitulo 2”
+
+```bash
+git add .
+git commit -m "Añadido capitulo 2”
+```
+
+
+10. Volver a mostrar el historial de cambios.
+
+```bash
+git add .
+git log
+```
+
+
+
+11. Crear el fichero capitulo3.txt en la carpeta capitulos con el siguiente texto:
+Abuelita qué ojos más grandes tienes. 
+```bash
+nano capitulo3.txt
+```
+
+
+
+12. Ver el estado del repositorio de forma abreviada e indicar qué significa cada letra.
+```bash
+git status
+```
+
+?? = Archivos sin seguimiento
+M = Archivos modificados
+
+13. Modificar el índice.txt añadiendo “Capitulo 5: Forzen””
+```bash
+nano index.html
+```
+
+
+14. Subir los cambios al repositorio ingorando el capitulo3.txt
+```bash
+nano .gitignore
+```
+Dentro del gitignore pongo capitulo3.txt
+
+```bash
+git add .
+git commit -m "Commit ignorando capitulo3.txt"
+```
+
+
+
+15. Modificar el fichero para que se ignoren todos aquellos ficheros que comiencen por _ a excepción del fichero _ayuda.txt (ya no se debe ignorar capitulo3.txt)
+
+Añadimos esto al fichero .gitignore
+```bash
+_*
+!_ayuda.txt
+```
+
+
+16. Crear un fichero _logs.txt con el siguiente contenido:
+Fichero para almacenar logs
+```bash
+nano _logs.txt
+```
+
+
+
+17. Crear un fichero _ayuda.txt con el siguiente contenido:
+Fichero de ayuda. 
+```bash
+nano _ayuda.txt
+```
+
+
+18. Preparar todo con git add *. Explicad qué pasa.
+```bash
+git add *
+```
+Seleccionas todos los repositorios menos los que empiezan por "_"
+
+
+19. Hacer un commit de los cambios con el mensaje “Añadido capitulo 2”. Comprobar/explicar qué se sube al repositorio.
+```bash
+git commit -m "Añadido capitulo 2"
+```
+
+Se añade el capitulo 2 y se ignoran los archivos que empiezan por "_"
+
+
+20. Modificar el fichero capitulo2.txt (elimina lo que había antes).
+Caperucita iba por el bosque 
+con su capa roja 
+
+
+
+
+21. Ver y explicar qué ha cambiado y aún no has preparado.
+
+
+22. Hacer un commit con el mensaje “Capitulo 2 modificado”
+
+
+23. Vuelve a modificar el capitulo con el siguiente contenido:
+Caperucita iba por el bosque con su capa roja 
+cuando llegó a casa de su abuela le dijo 
+"Abuela qué ojos más grandes tienes"
+
+
+
+24. Prepara tus cambios y comprueba qué ha cambiado con la última instantánea confirmada.
+
+
+
+25. Elimina del repositorio el fichero _ayuda.txt
+
+
+
+
+26. Cambia el nombre del fichero indice.txt por indice_libros.txt y sube los cambios.
+
+
+
+27. Cambia el mensaje del último commit.
+
+
