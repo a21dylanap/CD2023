@@ -372,26 +372,34 @@ con su capa roja
 21. Ver y explicar qué ha cambiado y aún no has preparado.
 
 
+
 22. Hacer un commit con el mensaje “Capitulo 2 modificado”
 
 
 23. Vuelve a modificar el capitulo con el siguiente contenido:
 Caperucita iba por el bosque con su capa roja 
 cuando llegó a casa de su abuela le dijo 
-"Abuela qué ojos más grandes tienes"
+"Abuela qué ojos más grandes tienes"f
 
-
+```bash
+git commit -m "Capitulo 2 modificado"
+```
 
 24. Prepara tus cambios y comprueba qué ha cambiado con la última instantánea confirmada.
-
+```bash
+git status
+```
 
 
 25. Elimina del repositorio el fichero _ayuda.txt
 
-
+```bash
+rm _ayuda.txt
+```
 
 
 26. Cambia el nombre del fichero indice.txt por indice_libros.txt y sube los cambios.
+
 
 
 
