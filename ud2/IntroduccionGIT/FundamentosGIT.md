@@ -371,23 +371,25 @@ con su capa roja
 
 21. Ver y explicar qué ha cambiado y aún no has preparado.
 
-
+El git reconoce los archivos pero no se añadieron al commit
 
 22. Hacer un commit con el mensaje “Capitulo 2 modificado”
-
-
-23. Vuelve a modificar el capitulo con el siguiente contenido:
-Caperucita iba por el bosque con su capa roja 
-cuando llegó a casa de su abuela le dijo 
-"Abuela qué ojos más grandes tienes"f
 
 ```bash
 git commit -m "Capitulo 2 modificado"
 ```
 
+23. Vuelve a modificar el capitulo con el siguiente contenido:
+Caperucita iba por el bosque con su capa roja 
+cuando llegó a casa de su abuela le dijo 
+"Abuela qué ojos más grandes tienes"
+
+
 24. Prepara tus cambios y comprueba qué ha cambiado con la última instantánea confirmada.
 ```bash
+nano capitulo2.txt
 git status
+git add .
 ```
 
 
@@ -400,9 +402,21 @@ rm _ayuda.txt
 
 26. Cambia el nombre del fichero indice.txt por indice_libros.txt y sube los cambios.
 
-
+```bash
+mv indice.txt indice_libros.txt
+git status
+git add .
+git commit -m "Cambio de nombre indice"
+```
 
 
 27. Cambia el mensaje del último commit.
+```bash
+git add .
+git commit --amend
+```
+
+Y dentro del archivo cambias el mensaje
+
 
 
