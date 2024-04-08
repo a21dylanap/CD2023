@@ -44,21 +44,20 @@ public class CalculadoraAvanzada extends Calculadora{
             super.dividir(x);
         }
 
-        @Override
+    
         public void raiz(double x){
             this.resultadoAnterior = getResultado();
             setResultado(Math.sqrt(x));
         }
 
 
-            @Override
         public void cuadrado(double x){
             this.resultadoAnterior = getResultado();
             setResultado(x * x);
         }
 
 
-        @Override
+
         public void reset(double x){
             this.resultadoAnterior = getResultado();
             setResultado(x);
