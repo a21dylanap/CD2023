@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'dylan 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'dylan 1.0-SNAPSHOT API'
+dylan
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/src/main/java = 1714375799137
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/search.js = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/allpackages-index.html = 1714377543932
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/search.html = 1714377543940
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/tag-search-index.js = 1714377543932
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/package-search-index.js = 1714377543932
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/overview-tree.html = 1714377543920
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/help-doc.html = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/link.svg = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/type-search-index.js = 1714377543932
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/stylesheet.css = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/index-all.html = 1714377543936
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/element-list = 1714377543904
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/copy.svg = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/script.js = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/search-page.js = 1714377543944
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/allclasses-index.html = 1714377543928
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/member-search-index.js = 1714377543932
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/index.html = 1714377543940
+/home/vagrant/Desktop/Contornos/CD2023/ud5/EjercicioDocumentacion2/dylan/target/site/apidocs/module-search-index.js = 1714377543932
